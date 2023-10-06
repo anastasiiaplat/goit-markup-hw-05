@@ -595,6 +595,7 @@ align-items: center;
 opacity: 0;
 visibility: hidden;
 pointer-events: none;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -613,12 +614,15 @@ pointer-events: none;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 72px 24px 24px 24px;
-}
+        box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .modal-btn {
-    
+    display: flex;
 background-color: var(--CORNFLOWER, #E7E9FC);
-    
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 24px;
     left: 360px;
@@ -627,6 +631,9 @@ background-color: var(--CORNFLOWER, #E7E9FC);
     width: 24px;
     height: 24px;
     padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover, .modal-btn:focus {
@@ -636,7 +643,7 @@ background-color: var(--OCEAN, #404BBF);
 
 .modal-btn-icon {
     fill: #2E2F42;
-        
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-icon:hover, .modal-btn-icon:focus {
@@ -650,8 +657,9 @@ fill: #FFFFFF;
         font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
-        line-height: 1.5
+        line-height: 1.5;
         letter-spacing: 0.02em;
+        
         margin-bottom: 16px;
 }
 
@@ -700,23 +708,23 @@ fill: #FFFFFF;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 resize: none;
+
 font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: rgba(46, 47, 66, 0.4);
+padding: 8px 16px;
     }
 
-    .modal-textarea:placeholder {
-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-    font-family: Roboto;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
-    
-    }
+        .modal-textarea:focus, .modal-textarea:hover {
+            border-color: #4D5AE5;
+        }
 
     .check-text {
         color: var(--LIGHT-SLATE, #8E8F99);
             font-size: 12px;
             font-weight: 400;
-            line-height: 1.16;
+            line-height: 1.17;
             letter-spacing: 0.04em;
             
     }
@@ -745,22 +753,23 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 
 .modal-form-btn {
     padding: 16px 32px;
-   
-    
+display: block;
+    cursor: pointer;
     color: var(--WHITE, #FFF);
         text-align: center;
-        font-family: Roboto;
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
         border: none;
     border-radius: 4px;
         background-color: var(--IRIS, #4D5AE5);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  .modal-check:checked + .check-text > .check-text-box{
 background-color: #404BBF;
@@ -769,7 +778,7 @@ fill: #F4F4FD;
  }
 
 .modal-field {
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 }
 
 .modal-label {
@@ -779,7 +788,7 @@ fill: #F4F4FD;
         font-family: Roboto;
         font-size: 12px;
         font-weight: 400;
-        line-height: 1.16;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         margin-bottom: 4px;
 }
