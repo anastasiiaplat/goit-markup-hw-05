@@ -856,6 +856,11 @@ display: block;
         background-color: var(--IRIS, #4D5AE5);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+margin: 0 auto;
+    }
+
+.modal-form-btn:hover, .modal-form-btn:focus {
+    background-color: #404BBF;
 }
 
 .modal-comment {
