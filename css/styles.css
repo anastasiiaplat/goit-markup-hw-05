@@ -746,6 +746,8 @@ padding: 8px 16px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    outline: transparent;
+        background-color: transparent;
 margin-right: 12px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -779,8 +781,7 @@ display: block;
 
 
 .modal-field {
-   
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-label {
