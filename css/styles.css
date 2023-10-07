@@ -798,6 +798,10 @@ padding: 8px 16px;
             border-color: #4D5AE5;
         }
 
+.modal-privacy {
+    margin-bottom: 24px;
+}
+
     .check-text {
         color: var(--LIGHT-SLATE, #8E8F99);
             font-size: 12px;
