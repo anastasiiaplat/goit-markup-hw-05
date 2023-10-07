@@ -498,6 +498,7 @@ background-color: var(--NAVY-BLUE, #2E2F42);
 .footer-container {
     display: flex;
     align-items: baseline;
+
 }
 .text-footer {
     margin-right: 120px;
@@ -584,11 +585,7 @@ align-items: center;
 }
 
 
-.footer-navigation {
-    display: flex;
-        justify-content: space-between;
-        align-items: center;
-}
+
 .footer-subscribe {
    
 }
