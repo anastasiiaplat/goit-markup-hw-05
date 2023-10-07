@@ -613,46 +613,48 @@ align-items: center;
     outline: transparent;
     border-radius: 4px;
         border: 1px solid var(--WHITE, #FFF);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        
 margin-left: 80px;
 color: var(--WHITE, #FFF);
 padding: 0 16px;
+font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
 
 .footer-form-input::placeholder {
     color: var(--WHITE, #FFF);
-        font-family: Roboto;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 2;
-        letter-spacing: 0.04em;
         
 }
 
 .footer-form-btn {
     border: none;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     display: inline-flex;
     align-items: center;
     margin-left: 24px;
-        padding: 8px 24px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 4px;
-            background-color: var(--IRIS, #4D5AE5);
-            color: var(--WHITE, #FFF);
-                text-align: center;
-                font-family: Roboto;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1,5;
-                letter-spacing: 0.04em;
-                gap: 16px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--IRIS, #4D5AE5);
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
 .form-icon {
 fill: #FFFFFF;
+margin-left: 16px;
     
 }
 /*  */
@@ -713,7 +715,7 @@ background-color: var(--CORNFLOWER, #E7E9FC);
 .modal-btn:hover, .modal-btn:focus {
 background-color: var(--OCEAN, #404BBF);
 border: none;
-
+fill: #ffffff;
 }
 
 .modal-btn-icon {
@@ -853,7 +855,7 @@ display: block;
 
 
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .modal-label {
